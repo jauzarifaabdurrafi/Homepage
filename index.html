@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="nav" id="nav">
+        <img src="images/netflix-logo.png" alt="" class="navlogo">
+        <img src="images/netflix-avatar.png" alt="" class="navavatar">
+    </div>
+    <!-- header -->
+     <div class="banner">
+        <div class="banner__contents">
+            <h1 class="banner_title">Senior Night Party</h1>
+            <div class="banner__buttons">
+                <button class="banner__button">Play</button>
+                <button class="banner__button">My List</button>
+            </div>
+            <div class="banner__descripition">
+                As we reached the end of our undergraduate journey, I want to let you guys know how proud I am. We’ve all come so far from where we started, and it honestly shows in the all of us have become. It wasn’t always easy. But somehow, we made it through all of it together. This night is for celebrating everything we’ve been through, all the memories that made it all worth it. I hope this party will help appreciate how far we’ve come, because we truly deserve it.
+            </div>
+        </div>
+        <div class="banner--fadeBottom"></div>
+     </div>
+    <!-- Netflix Originals -->
+<div class="row">
+    <h2>SENIOR</h2>
+    <div class="row__posters">
+        <img src="Extra/images/Senior/Omarr.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Senior/Dhia.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Senior/Ihsan.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Senior/Ilham.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Senior/Zayd.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Senior/Sakeena.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Senior/Michelle.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Senior/Jephtha.jpg" alt="" class="row_poster row_posterLarge">
+    </div>
+ <!-- Netflix Originals -->
+<div class="row">
+    <h2>JUNIOR</h2>
+    <div class="row__posters">
+        <img src="Extra/images/Junior/Nathaniel.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Junior/Adifa.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Junior/Alex.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Junior/Jhenny.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Junior/Addyna.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Junior/Jovan.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Junior/Mirlavi.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Junior/Veraz.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Junior/Afiq.jpg" alt="" class="row_poster row_posterLarge">
+        <img src="Extra/images/Junior/Izzat.jpg" alt="" class="row_poster row_posterLarge">
+    </div>
+</div>
+
+
+
+
+
+    <script>
+        const nav= document.getElementById('nav')
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >= 100) {
+                nav.classList.add('nav_black');
+            } else {
+                nav.classList.remove('nav__black');
+            }
+        });
+    </script>
+</body>
+</html>   <script>
+      document.querySelectorAll('.row_poster.row_posterLarge').forEach(function(img) {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+          window.location.href = 'https://jauzarifaabdurrafi.github.io/Login-Page/';
+        });
+      });
+    </script>
+  </body>
+</html>
