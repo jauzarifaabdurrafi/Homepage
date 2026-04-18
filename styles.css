@@ -101,12 +101,12 @@ body {
 }
 
 .navlogo {
-    width: 150px;
+    width: 200px;
     object-fit: contain;
 }
 
 .navavatar {
-    width: 50px;
+    width: 100px;
     object-fit: contain;
 }
 
